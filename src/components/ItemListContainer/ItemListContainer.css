@@ -1,6 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Righteous&display=swap');
 
-.text{
+
+.list-products{
+   margin: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.welcome, .card-text, .card-title.h5{
     color: #fcddfc;
     font-family: 'Poppins', sans-serif;
+}
+
+.welcome{
+    font-size: 1.25rem;
+    margin: 20px;
+}
+
+.card-img-top{
+    height: 12rem;
+    object-fit: cover;
+}
+
+.card-text{
+    font-size: 0.9rem;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #212529;
+    border: 2px solid #79fd39;
+}
+
+.btn{
+    background-color: #212529;
+    border: 1px solid #79fd39;
+    color: #fcddfc;
+}
+
+.btn:hover{
+    border: 1px solid #212529;
+    background-color: #9bff6958;
 }

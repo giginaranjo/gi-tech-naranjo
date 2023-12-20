@@ -51,10 +51,6 @@
     background-color: #9bff6958;
 }
 
-.navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-divider {
-    border-top: #79fd39 1px solid;
-}
-
 .active{
     color: #79fd39 !important; 
 }

@@ -18,18 +18,23 @@ const NavBar = () => {
       <Navbar expand="lg" className="fondo">
         <Container>
           <Navbar.Brand href="#home"><h1><span className='title-one'>Gi</span><span className='title-two'>Tech</span></h1></Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Contacto</Nav.Link>
-              <NavDropdown title="Productos" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Celulares</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Tablets</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Notebooks</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">Accesorios</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.5">Ver todos</NavDropdown.Item>
+              <Nav.Link href="#link">Contact</Nav.Link>
+              <NavDropdown title="Smartphones">
+                <NavDropdown.Item href="#action/3.1">Apple</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">Samsung</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Oppo</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.4">Huawei</NavDropdown.Item>
+              </NavDropdown>
+              <NavDropdown title="Notebooks">
+                <NavDropdown.Item href="#action/3.1">Apple</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">Samsung</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Microsoft</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.4">Infinix</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.5">HP</NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
