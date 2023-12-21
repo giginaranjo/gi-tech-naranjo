@@ -42,7 +42,7 @@ export const useGetItemProduct = (id) => {
 
 export const useGetCategory = () => {
 
-    const [category, setCategory] = useState([]);
+    const [categoria, setCategory] = useState([]);
 
     useEffect(() => {
         getCategory()
@@ -53,6 +53,11 @@ export const useGetCategory = () => {
                 console.error(err);
             })
     }, []);
+
+    let category = [];
+    const categOne = categoria.filter((categ) => categ.includes("smartphones"));
+    const categTwo = categoria.filter((categ) => categ.includes("laptops"));
+    category.push(categOne, categTwo)
 
     return { category };
 

@@ -6,7 +6,7 @@ const Home = () => {
     const { productsData } = useGetProducts(10);
 
     return (
-        <ItemListContainer greeting="Explora lo último en tecnología con nosotros." productsData={productsData} />
+        <ItemListContainer greeting="Explore the latest in technology with us." productsData={productsData} />
     )
 }
 

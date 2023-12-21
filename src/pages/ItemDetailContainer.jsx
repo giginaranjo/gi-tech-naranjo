@@ -1,14 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
+
 import { useGetItemProduct } from '../hooks/useProducts';
 import { useParams } from 'react-router-dom';
 
 const ItemDetailContainer = () => {
 
-  const {id} = useParams()
-  const {productData} = useGetItemProduct(id);
+  const { id } = useParams()
+  const { productData } = useGetItemProduct(id);
 
   return (
+
     <Card key={productData.id} className='tarjeta' style={{ width: '20rem', border: "1px solid #79fd39" }}>
       <Card.Img variant="top" src={productData.thumbnail} />
       <Card.Body>
@@ -23,8 +25,11 @@ const ItemDetailContainer = () => {
 
 export default ItemDetailContainer
 
-/* productData.images ? productData.images.map((image) => {
-  return(
-    <Card.Img variant="top" src={image} />
-  )
-}) : null  */
+
+/* {productData.images ? productData.images.map((image) => {
+          return (
+            <Carousel.Item>
+              <ExampleCarouselImage src={image} />
+            </Carousel.Item>
+          )
+        }) : null} */
