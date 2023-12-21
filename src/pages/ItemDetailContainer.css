@@ -1,0 +1,58 @@
+.tarjetita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.card-items {
+    width: 50rem;
+    overflow: hidden;
+}
+
+.img-products {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.imagen {
+    object-fit: cover;
+}
+
+.list-group-item {
+    color: #fcddfc;
+    background-color: #212529;
+}
+
+.secc-btn {
+    padding: 7px;
+}
+
+
+.btn {
+    background-color: #212529;
+    color: #fcddfc;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 10rem;
+    padding: 5px;
+}
+
+.btn:hover {
+    color: #fcddfc;
+    border: 1px solid #212529;
+    background-color: #9bff6958;
+    width: 100%;
+}
+
+.info-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background-color: #212529;
+    border: 1px solid #79fd39;
+    padding: 25px 25px 30px 25px ;
+}
