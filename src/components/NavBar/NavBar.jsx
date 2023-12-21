@@ -18,12 +18,12 @@ const NavBar = () => {
     <div>
       <Navbar expand="lg" className="fondo">
         <Container>
-          <Link to="/"><h1><span className='title-one'>Gi</span><span className='title-two'>Tech</span></h1></Link>
+          <Link className="title" to="/"><h1><span className='title-one'>Gi</span><span className='title-two'>Tech</span></h1></Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Link to="/">Home</Link>
-              <Nav.Link href="#link">Contact</Nav.Link>
+              <Link className='options-nav' to="/">Home</Link>
+              <Link className='options-nav' to="/contact">Contact</Link>
               <NavDropdown title="Category">
                 {
                   category.map((categ, index) => {

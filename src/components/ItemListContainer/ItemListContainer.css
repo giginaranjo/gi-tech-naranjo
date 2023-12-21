@@ -23,7 +23,16 @@
 
 .welcome{
     font-size: 1.25rem;
-    margin: 20px;
+    margin: 10px;
+}
+
+.card-title.h5{
+    margin: 0px;
+}
+
+.card{
+    width: 20rem; 
+    border: 1px solid #79fd39;
 }
 
 .card-img-top{
@@ -38,18 +47,26 @@
 .card-body{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
+    gap: 25px;
     background-color: #212529;
-    border: 2px solid #79fd39;
+    border: 1px solid #79fd39;
+    padding: 25px 25px 30px 25px ;
 }
 
-.btn{
+.view-product{
     background-color: #212529;
     border: 1px solid #79fd39;
     color: #fcddfc;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 10rem;
+    padding-bottom: 5px;
+    
 }
 
-.btn:hover{
+.view-product:hover{
     border: 1px solid #212529;
     background-color: #9bff6958;
 }

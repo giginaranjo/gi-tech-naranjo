@@ -15,17 +15,14 @@ const ItemListContainer = ({ greeting, productsData }) => {
         {
           productsData.map(products => {
             return (
-              <Card key={products.id} className='tarjeta' style={{ width: '20rem', border: "1px solid #79fd39" }}>
+              <Card key={products.id}>
                 <Link to={`/item/${products.id}`}>
                   <Card.Img variant="top" src={products.thumbnail} />
                 </Link>
                 <Card.Body>
                   <Card.Title>{products.title}</Card.Title>
-                  <Card.Text>
-                    {products.description}
-                  </Card.Text>
-                  <Link to={`/item/${products.id}`}>
-                    Ver producto
+                  <Link className='view-product' to={`/item/${products.id}`}>
+                    View product
                   </Link>
                 </Card.Body>
               </Card>
