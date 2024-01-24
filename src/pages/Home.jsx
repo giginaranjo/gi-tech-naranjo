@@ -3,7 +3,7 @@ import { useGetProducts } from '../hooks/useProducts'
 
 const Home = () => {
 
-    const { productsData } = useGetProducts(10);
+    const { productsData } = useGetProducts("products");
 
     return (
         <ItemListContainer greeting="Explore the latest in technology with us." productsData={productsData} />

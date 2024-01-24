@@ -6,21 +6,19 @@ import ListGroup from 'react-bootstrap/ListGroup';
 
 import { useGetItemProduct } from '../hooks/useProducts';
 import { useParams } from 'react-router-dom';
+import ItemCount from '../components/ItemCount/ItemCount';
+
 
 const ItemDetailContainer = () => {
 
   const { id } = useParams()
-  const { productData } = useGetItemProduct(id);
+  const { productData } = useGetItemProduct("products", id);
 
   return (
     <div className='tarjetita'>
       <Card className='card-items' key={productData.id}>
         <div className='img-products'>
-          {productData.images ? productData.images.map((image) => {
-            return (
-              <Card.Img className='imagen' variant="top" src={image} />
-            )
-          }) : null}
+              <Card.Img className='imagen-detalle' variant="top" src={productData.thumbnail} />
         </div>
         <Card.Body className='info-principal'>
           <Card.Title>{productData.title}</Card.Title>
@@ -33,8 +31,8 @@ const ItemDetailContainer = () => {
           <ListGroup.Item>Brand: {productData.brand}</ListGroup.Item>
           <ListGroup.Item>Price: ${productData.price}</ListGroup.Item>
         </ListGroup>
-        <Card.Body className='secc-btn'>
-          <Card.Link className='btn' href="#">Add to cart</Card.Link>
+        <Card.Body style={{padding: "10px"}}>
+          <ItemCount idProduct={productData.id}/>
         </Card.Body>
       </Card>
     </div>
