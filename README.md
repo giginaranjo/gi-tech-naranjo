@@ -1,8 +1,39 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# E-commerce GiTech (React + Vite)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Authors
+
+- Naranjo, Gilary [@giginaranjo](https://github.com/giginaranjo)
+
+
+## Dependencies
+
+- React-Router-Dom
+- Bootstrap
+- Firebase
+- Font awesome
+- Sonner
+
+
+## Installation
+
+1- Clona el Repositorio:
+
+git clone https://github.com/giginaranjo/gi-tech-naranjo.git
+
+
+2- Instala las Dependencias:
+    
+cd gi-tech-naranjo
+npm install
+
+
+3- Inicia la Aplicación:
+
+npm run dev
+
+ 
+
+
+**Nota**: Asegúrate de tener Node.js y npm instalados en tu sistema antes de comenzar.
