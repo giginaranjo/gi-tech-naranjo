@@ -1,6 +1,8 @@
 import { useContext, useState } from 'react';
 import { CartContext } from '../../context/CartContext';
 
+import { Toaster, toast } from 'sonner'
+
 
 const ItemCount = ({ idProduct }) => {
 
@@ -30,6 +32,8 @@ const ItemCount = ({ idProduct }) => {
         } else {
             setCount([...count, { id: idProduct, quantity: countProduct }]);
         }
+        
+        toast.success(countProduct + ' Product added to shopping cart.');
 
         setCountProduct(1);
 
@@ -37,8 +41,9 @@ const ItemCount = ({ idProduct }) => {
 
 
     return (
-
+        
         <div className="btn-cart">
+            <Toaster position="top-right"/>
             <div className='mqp'>
                 <button className="minus" onClick={handleRemove} >-</button>
                 <span className="quanti">{countProduct}</span>
@@ -51,3 +56,7 @@ const ItemCount = ({ idProduct }) => {
 }
 
 export default ItemCount;
+
+
+
+

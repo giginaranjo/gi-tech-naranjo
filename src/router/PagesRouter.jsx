@@ -7,7 +7,7 @@ import ItemDetailContainer from "../pages/ItemDetailContainer";
 const PagesRouter = () => {
   return (
     <BrowserRouter>
-      <NavBar />
+      <NavBar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/category/:category" element={<Category />} />
