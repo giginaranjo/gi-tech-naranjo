@@ -18,22 +18,22 @@
 
 ## Installation
 
-1- Clona el Repositorio:
+1. Clona el Repositorio:
 
-git clone https://github.com/giginaranjo/gi-tech-naranjo.git
+- git clone https://github.com/giginaranjo/gi-tech-naranjo.git
 
 
-2- Instala las Dependencias:
+2. Instala las Dependencias:
     
-cd gi-tech-naranjo
-npm install
+- cd gi-tech-naranjo
+- npm install
 
 
-3- Inicia la Aplicación:
+3. Inicia la Aplicación:
 
-npm run dev
+- npm run dev
 
  
 
-
-**Nota**: Asegúrate de tener Node.js y npm instalados en tu sistema antes de comenzar.
+> [!NOTE]
+Asegúrate de tener Node.js y npm instalados en tu sistema antes de comenzar.
