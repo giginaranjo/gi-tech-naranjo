@@ -5,12 +5,12 @@ import {useGetProductsCategory } from '../hooks/useProducts'
 
 const Category = () => {
 
-    const { id } = useParams()
-    const { productsData } = useGetProductsCategory(id);
+    const { category } = useParams()
+    const { productsCategory } = useGetProductsCategory(category);
     
 
     return (
-        <ItemListContainer greeting="" productsData={productsData} />
+        <ItemListContainer greeting={category} productsData={productsCategory} />
     )
 }
 

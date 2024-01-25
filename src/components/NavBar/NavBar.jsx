@@ -11,8 +11,9 @@ import { useGetCategory } from '../../hooks/useProducts';
 
 
 const NavBar = () => {
+  
+  const { category } = useGetCategory()
 
-  const {category} = useGetCategory()
 
   return (
     <div>
@@ -22,17 +23,17 @@ const NavBar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
+              
               <Link className='options-nav' to="/">Home</Link>
-              <Link className='options-nav' to="/contact">Contact</Link>
-              <NavDropdown title="Category">
+              
+              <NavDropdown title="Category" >
                 {
-                  category.map((categ, index) => {
-                    return(
-                      <NavDropdown.Item key={index}> <Link to={`/category/${categ}`}>{categ}</Link></NavDropdown.Item>
-                    )
-                  })
+                  category.map((categ) => categ.category.map((category, index) => (
+                    <NavDropdown.Item key={index}> <Link to={`/category/${category}`} style={{ textDecoration: "none", color: "white" }}> {category} </Link> </NavDropdown.Item>
+                  )))
                 }
               </NavDropdown>
+
             </Nav>
           </Navbar.Collapse>
           <CartWidget />

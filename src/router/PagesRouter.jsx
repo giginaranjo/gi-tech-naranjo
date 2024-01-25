@@ -10,7 +10,7 @@ const PagesRouter = () => {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/category/:id" element={<Category />} />
+        <Route path="/category/:category" element={<Category />} />
         <Route path="/item/:id" element={<ItemDetailContainer />} />
       </Routes>
     </BrowserRouter>
